@@ -1,11 +1,13 @@
-type cityType = {
+import {cityType} from "./02_02";
+
+type LocalcityType = {
     title: string
     countryTitle: string
 }
 
 type addressType = {
     streetTitle: string
-    city: cityType
+    city: LocalcityType
 }
 
 type TechType = {
@@ -31,7 +33,7 @@ const student:StydentType = {     //присваиваем переменной 
         streetTitle: "Slepneva 15",
         city: {
             title: "Yaroslavl",
-            countryTitle: "Belarus",
+            countryTitle: "Russia",
         }
     },
     technologies: [
