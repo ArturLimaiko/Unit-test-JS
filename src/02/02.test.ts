@@ -80,6 +80,7 @@ test("test should be contains 3 houses", () => {
 })
 
 
+
 // 01.Дополните тип GovernmentBuildingType2
 // 02. Заполните объект city , что бы тесты ниже прошли
 
