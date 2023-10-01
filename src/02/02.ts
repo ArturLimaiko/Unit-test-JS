@@ -1,5 +1,3 @@
-import {cityType} from "./02_02";
-
 type LocalcityType = {
     title: string
     countryTitle: string
@@ -15,7 +13,7 @@ type TechType = {
     title: string
 }
 
-type StydentType = {
+export type StydentType = {
     id: number
     name: string
     age: number
@@ -24,7 +22,7 @@ type StydentType = {
     technologies: Array<TechType>
 }
 
-const student:StydentType = {     //присваиваем переменной student какой то создаваемый объект
+export const student:StydentType = {     //присваиваем переменной student какой то создаваемый объект
     id: 1,
     name: "Artur",
     age: 32,
@@ -50,7 +48,6 @@ const student:StydentType = {     //присваиваем переменной 
             title: "React"
         },
     ]
-
 }
 
 console.log(student.age)
