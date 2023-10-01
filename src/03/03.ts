@@ -10,11 +10,11 @@ export function sum2  (a:number,b: number) {
     return a + b;
 }
 
-// const res = sum(2,3) //5
-//
-// const res2 = sum(2,4) //6
-//
-// const res3 = sum(sum(1,2), sum(3,4)) //10
+const res = sum(2,3) //5
+
+const res2 = sum(2,4) //6
+
+const res3 = sum(sum(1,2), sum(3,4)) //10
 
 
 export const addSkill = ( student: StydentType, skill: string)  => { //в параметрах не обязательно называть student можем назвать st или еще как то
