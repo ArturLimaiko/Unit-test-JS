@@ -4,22 +4,21 @@ export type ManType = {
 };
 
 const people: Array<ManType> = [
-    { name: 'Andrew Ivanov', age: 33 },
-    { name: 'Alexander Petrov', age: 24 },
-    { name: 'Dmitry Sidorov', age: 18 },
+    {name: 'Andrew Ivanov', age: 33},
+    {name: 'Alexander Petrov', age: 24},
+    {name: 'Dmitry Sidorov', age: 18},
 ];
 
 
 //создаем функцию которая получает на входе отдельного человека man: ManType
 // а после возвращает другой объект . разделяя при этом имя и фамилию с помощью метода split
-const dimychTransformator = (man: ManType) =>(
+const dimychTransformator = (man: ManType) => (
     {
         stack: ['css, htnl', 'js', 'tdd', 'react'],
         firstName: man.name.split(' ')[0],
         lastName: man.name.split(' ')[1],
     }
 )
-
 
 
 const devs = [
@@ -57,11 +56,11 @@ const devs3 = people.map(dimychTransformator)
 
 
 //здесь напрямую закидываем people в переменную devs4 и с помощью метода .map () пробегаемся по массиву
-const devs4 = people.map(man =>({
-        stack: ['css, htnl', 'js', 'tdd', 'react'],
-        firstName: man.name.split(' ')[0],
-        lastName: man.name.split(' ')[1],
-    }))
+const devs4 = people.map(man => ({
+    stack: ['css, htnl', 'js', 'tdd', 'react'],
+    firstName: man.name.split(' ')[0],
+    lastName: man.name.split(' ')[1],
+}))
 
 
 // сделаем 3 приветственных сообщения.
@@ -74,7 +73,8 @@ const messages = people.map(man => `Hello ${man.name.split(" ")[0]}. Welcome to 
 
 
 //создадим функцию которая будет создавать greeting сообщение
-    //передаем массив людей а мы на основе массива людей пробежимся .map и return то что возвращает map
+//передаем массив людей а мы на основе массива людей пробежимся .map и return то что возвращает map
+// и экспортируем эту функцию в test
 export const createGreetingMessage = (people: Array<ManType>) => {
     return people.map(man => `Hello ${man.name.split(" ")[0]}. Welcome to IT-INCUBATOR`)
 }
