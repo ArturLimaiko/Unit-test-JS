@@ -18,10 +18,9 @@ export const getStreetTitlesOfHouses =
     }
 
 
-    // Задача нашей функции - получает на входе массив с объектами и
+// Задача нашей функции - получает на входе массив с объектами и
 // вернуть массив строк
-export const createMessages =
-    (houses: Array<HouseType>) => {
+export const createMessages = (houses: Array<HouseType>) => {
     //и возвращаем строку
         return houses.map(house => `Hello guys from ${house.address.street.title}`)
     }
